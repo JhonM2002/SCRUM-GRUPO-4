@@ -1,0 +1,11 @@
+# Usar una imagen base de Python
+FROM python:3.9-slim
+
+# Configurar el directorio de trabajo en el contenedor
+WORKDIR /app
+
+# Copiar todos los archivos Python al contenedor
+COPY . .
+
+# Ejecutar el archivo principal
+CMD ["python", "main.py"]
